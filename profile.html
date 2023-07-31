@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="users.html">Users</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+    </nav>
+    <section>
+      WELCOME JOHN DOE
+    </section>
+  </header>
+  <main>
+    <section class="account">
+      <h2>Update your account</h2>
+      <form action="#" method="post" class="register">
+        <label for="Username">Username*</label><br>
+        <input  class="" type="text" name="username" id="username" value="John_Doe" required><br>
+
+        <label for="fullname">Full name</label><br>
+        <input class="" autocomplete="given-name" type="text" name="name" id="name"><br>
+
+        <label for="email">email*</label><br>
+        <input type="email" name="email" id="email" value="johndoe@example.com" disabled><br>
+        <br>
+        <button type="submit">Update profile</button>
+      </form>
+    </section>
+    <br>
+    <section class="password">
+      <h2>Change your password</h2>
+      <form action="#" method="post" class="register">
+        <label for="current_password">Current Password*</label><br>
+        <input type="password" autocomplete="current-password" name="current_password" id="current_password" required><br>
+
+        <label for="password">Password*</label><br>
+        <input type="password" autocomplete="new-password" name="password" id="password" required><br>
+
+        <label for="conf_password">Confirm password*</label><br>
+        <input type="password" autocomplete="new-password" name="confirm_password" id="conf_password" required><br><br>
+
+        <button type="submit">Update Password</button>
+      </form>
+    </section>
+    <br>
+    <section>
+      <h2>Delete your account</h2>
+      <form action="#" method="post">
+        <label>
+          <input type="checkbox" name="delete_account" id="delete_account">
+        </label>
+        <button type="submit">Delete my account</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <h3>About us</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo totam animi delectus, officia
+        quaerat repellat, corrupti deleniti, fugit saepe doloribus porro optio voluptates. Ullam amet veritatis repellat
+        aut enim.</p>
+    </div>
+    <div>
+      <address>
+        <li>email: you@gmail.whatever</li>
+        <li>contact: +234 12345678</li>
+      </address>
+    </div>
+  </footer>
+</body>
+
+</html>

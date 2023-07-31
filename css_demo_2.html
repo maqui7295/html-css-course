@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS DEMO</title>
+  <link rel="stylesheet" href="demo.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      
+    }
+    
+    body {
+      /* background-color: gray; */
+      /* box-sizing: border-box; */
+    }
+
+    p {
+      font-size: 12px;
+      color: green;
+    }
+
+    section + p {
+      color: red; 
+      background-color: white;       
+    }
+
+    #last_p {
+      color: white; 
+      background-color: black;
+    }
+
+    .first {
+      color: blue;
+      font-size: 16px;
+      padding-bottom:20px;
+    }
+
+    body > div {
+      color: aqua;
+      border: 3px solid;
+    }
+
+    section p {
+      text-align: center;
+    }
+
+    button:hover {
+      background-color: green;
+      color: white;
+    } 
+
+    button:focus {
+      background-color: red;
+      color: black;
+    } 
+
+    .list li {
+      padding: 10px;
+      border: 1px solid gray;
+    }
+
+    .list li:first-child {
+      padding: 5px;
+    }
+
+    .list li:last-child {
+      padding: 8px;
+    }
+
+    .list li:nth-child(4) {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <p class="first_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ex blanditiis reiciendis.
+    Inventore ex impedit neque veritatis vero nisi cum ullam? Quia nisi earum nobis voluptas cupiditate optio officia
+    recusandae.</p>
+
+  <div class="first sibling">
+    <h2>My DIV</h2>
+    I have a class first
+  </div>
+
+  <button>My Button</button>
+
+  <section class="first">
+    <h2>My section</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis animi quasi pariatur itaque beatae, accusamus eos
+      dolore adipisci? Ut fugiat inventore eius placeat nesciunt quibusdam laudantium ratione, quis blanditiis
+      obcaecati?</p>
+    <div>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsum excepturi omnis officia quasi doloremque
+        voluptatum, nam, saepe sit aut nisi adipisci beatae magnam distinctio blanditiis voluptates autem dolorum
+        dolores?
+      </p>
+    </div>
+  </section>
+
+  <p id="last_p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum saepe doloremque laboriosam.</p>
+
+  <div class="one two three sibling">
+    <p>Multiple classes</p>
+  </div>
+
+
+  <ul class="list">
+    <li>Hello 1</li>
+    <li>Hello 2</li>
+    <li>Hello 3</li>
+    <li>Hello 4</li>
+  </ul>
+</body>
+
+</html>

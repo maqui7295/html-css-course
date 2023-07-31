@@ -1,0 +1,12 @@
+Download Git
+https://git-scm.com/downloads
+
+Github account
+https://github.com/
+
+Github Repo
+https://github.com/maqui7295/html-css-course
+
+
+Tutorial
+https://www.youtube.com/watch?v=RGOj5yH7evk

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact page</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="users.html">Users</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+    </nav>
+    <section>
+      CONTACT US
+    </section>
+  </header>
+  <main>
+    
+    <!-- change the enctype to multipart/form-data  if you want to upload a file -->
+    <!-- use the novalidate attribute to turn off browser validation -->
+    <!-- Validation attributes: min, max, required, minlength, maxlength, pattern -->
+    <form action="#" method="post" enctype="multipart/form-data" class="example" id="example">
+
+      <input type="hidden" name="token" value="teyueueiefoeogdgh">
+
+      <label for="username">Username*</label>
+      <input class="" minlength="3" maxlength="100" type="text" name="username" placeholder="enter your username" id="username" required><br><br>
+      
+      <label for="email">Email*</label>
+      <input type="email" placeholder="yourname@example.com" minlength="3" maxlength="100" name="email" id="email" required><br><br>
+
+      <label for="password">Password*</label>
+      <input type="password" placeholder="Enter a strong password" minlength="8" maxlength="60" name="password" id="password" required><br><br>
+      
+      <label for="phone">Phone number</label>
+      <input type="tel" name="phone" id="phone"  disabled><br><br>
+
+      <label for="age">Age</label>
+      <input type="number" min="18" max="25" name="age" id="age" required><br><br>
+
+      <label for="accept">Agree to terms</label>
+      <input type="checkbox" name="accept" id="accept" required><br><br>
+
+      
+      <h5>Choose your options</h5>
+      <label>
+        <input type="checkbox" name="items" id="items1"> Option 1
+      </label>
+      <br><br>
+      <label>
+        <input type="checkbox" name="items" id="items2"> Option 2
+      </label>
+      <br><br>
+      <label>
+        <input type="checkbox" name="items" id="items3"> Option 3
+      </label>
+      <br><br>
+
+      <h5>Choose your ocupation</h5>
+      <label>
+        <input type="radio" name="occupation" id="occupa1"> Lawyer
+      </label>
+      <br><br>
+      <label>
+        <input type="radio" name="occupation" id="occupa2"> Scientist
+      </label>
+      <br><br>
+      <label>
+        <input type="radio" name="occupation" id="occupa3"> Programmer
+      </label>
+      <br><br>
+      
+      <label for="date">Birthday</label>
+      <input type="date" name="date" id="date"><br><br> <br><br>
+      <!-- <input type="datetime" name="datetime" id="datetime"> <br><br> -->
+      
+      <label for="message">Message</label><br>
+      <textarea maxlength="250" name="message" id="message" cols="50" rows="10"></textarea> <br><br>
+
+      <select required>
+        <option value="">Select your country</option>
+        <option value="Nigeria" selected>Nigeria</option>
+        <option value="Ghana">Ghana</option>
+        <option value="Togo">Togo</option>
+      </select>
+
+      <br><br>
+
+      <select multiple>
+        <option value="">Select multiple countries</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Ghana">Ghana</option>
+        <option value="Togo">Togo</option>
+        <option value="China">China</option>
+        <option value="Peru">Peru</option>
+      </select>
+
+      <br><br>
+
+      <input type="file" name="file" id="file"><br><br>
+      <input multiple type="file" name="image" id="image" accept="image/jpeg,image/png,image/gif,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/msword"><br><br>
+
+      <input type="range" value="3" name="range" min="1" max="10" id="range"><br><br>
+
+      <input type="url" name="website" id="website" required><br><br>
+
+      <button type="submit" >Submit Me</button>
+      <button type="button">Cancel</button>
+      <button type="reset" disabled>Reset</button>
+      <br><br>
+
+      <!-- <input type="submit" value="Submit Me">  <br><br> -->
+    </form>
+  </main>
+  <footer>
+    <div>
+      <h3>About us</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo totam animi delectus, officia quaerat repellat, corrupti deleniti, fugit saepe doloribus porro optio voluptates. Ullam amet veritatis repellat aut enim.</p>
+    </div>
+    <div>
+      <address>
+        <li>email: you@gmail.whatever</li>
+        <li>contact: +234 12345678</li>
+      </address>
+    </div>
+  </footer>
+
+</body>
+</html>

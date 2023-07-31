@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS DEMO</title>
+  <link rel="stylesheet" href="demo.css">
+  <style>
+    /* css here */
+
+     /* Structure */
+    /* selector {
+      attribute: value;
+      attribute2: value;
+    } */
+
+    /* SELECTORS */
+    /* tag selectors */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-size: large;
+      color: aqua;
+    }
+
+    .first {
+      color: red;
+    }
+
+    .first > p {
+      color: green;
+    }
+
+    #myId {
+      color: blue;
+    }
+
+    /* multiple selectors */
+    p, div, section {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+   /* div {} */
+
+   /* div.first {} */
+
+   .one.two.three {
+    background-color: grey;
+   }
+
+    /* child and descendant selectors */
+
+    /* direct child, use > */
+    .first > h2 {
+      text-align: center;
+    }
+
+    .one.two.three > p {
+      color: white;
+    }
+
+    /* descendant selector, use space */
+    section p {
+      color: blueviolet;
+      padding: 16px;
+    }
+    
+    /* Sibling selector, use + */
+    .our_first_p + .sibling {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      border: 10px solid green;
+    }
+
+
+    /* selector modifiers */
+
+    .navbar a:hover {
+      text-decoration: none;
+      color: red;
+      background-color: grey;
+    }
+
+    .navbara:focus {}
+
+    /* :focus */
+    .navbar a:visited {}
+
+    .sibling:hover, button:hover {
+      cursor: pointer;
+    }
+
+
+    /* position */
+    
+    /* all children */
+    .list {
+      list-style: none;
+      border: 1px solid grey;
+      display: flex;
+    }
+
+    .list li {
+      /* display: inline-block; */
+      height: 20px;
+      padding: 8px;
+      border-right: 1px solid grey;
+    }
+
+    .list li:first-child {
+      border-left: 1px solid grey;
+    }
+
+
+    
+    /* only first child */
+    /* .list li:first-child {
+      text-align: center;
+    } */
+
+    /* only last child */
+    /* .list li:last-child {
+      text-align: right;
+    } */
+
+    /* select an nth child */
+    /* .list li:nth-child(3) {
+      color: red;
+    } */
+    
+    div.similar {
+      height: 20px;
+      padding: 10px;
+      border: 2px dashed grey;
+    }
+
+
+    .similar:last-child {
+      border-bottom: 2px solid green;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+
+    button {
+      margin: 20px;
+      padding: 8px 5px;
+      width: 200px;
+      background-color: skyblue;
+      color: white;
+      border: 0;
+    }
+
+    button:focus {
+      background-color: blue;
+      border: 2px solid red;
+    }
+
+    button:hover {
+      background-color: green;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <nav class="navbar">
+    <a href="#">A Link</a>
+  </nav>
+
+  <button>My Button</button>
+
+  <p class="our_first_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ex blanditiis reiciendis. Inventore ex impedit neque veritatis vero nisi cum ullam? Quia nisi earum nobis voluptas cupiditate optio officia recusandae.</p>
+
+  <div class="first sibling">
+    <h2>My DIV</h2>
+    I have a class first
+  </div>
+
+  <section class="first">
+    <h2>My section</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis animi quasi pariatur itaque beatae, accusamus eos dolore adipisci? Ut fugiat inventore eius placeat nesciunt quibusdam laudantium ratione, quis blanditiis obcaecati?</p>
+    <div>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsum excepturi omnis officia quasi doloremque voluptatum, nam, saepe sit aut nisi adipisci beatae magnam distinctio blanditiis voluptates autem dolorum dolores?
+      </p>
+    </div>
+  </section>
+
+  <p id="myId">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum saepe doloremque laboriosam.</p>
+
+  <div class="one two three sibling">
+    <p>Multiple classes</p>
+  </div>
+
+  <ul class="list">
+    <li>Hello 1</li>
+    <li>Hello 2</li>
+    <li>Hello 3</li>
+    <li>Hello 4</li>
+  </ul>
+
+  <div class="similar">First similar div</div>
+  <div class="similar">Second similar div</div>
+  <div class="similar">Third similar div</div>
+</body>
+</html>

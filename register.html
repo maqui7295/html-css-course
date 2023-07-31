@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="users.html">Users</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+    </nav>
+    <section>
+      REGISTER
+    </section>
+  </header>
+  <main>
+    <form action="#" method="post" class="register">
+      <!-- username between 3 and 50 characters -->
+      <label for="Username">Username*</label><br>
+      <input class="" type="text" name="user" minlength="3" maxlength="50" placeholder="Alfred" id="username" required><br> 
+      
+      <!-- email must be at least 5 characters -->
+      <label for="email">email*</label><br>
+      <input type="email" name="email" minlength="5" placeholder="You@gmail.com" id="email" required><br>
+      
+      <!-- password between 8 and 60 characters -->
+      <label for="password">Password*</label><br>
+      <input type="password" name="password" minlength="8" maxlength="60" placeholder="enter your password" id="password" required><br>
+      <p>password should contain at least a special character</p>
+      
+      <!-- username between 8 and 60 characters -->
+      <label for="conf_password">Confirm password*</label><br>
+      <input type="password" name="confirm_password" minlength="8" maxlength="60" placeholder="please confirn your password" id="conf_password" required><br><br>
+      
+      <button type="submit">Register</button>
+    </form>
+  </main>
+  <footer>
+    <div>
+      <h3>About us</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo totam animi delectus, officia quaerat repellat, corrupti deleniti, fugit saepe doloribus porro optio voluptates. Ullam amet veritatis repellat aut enim.</p>
+    </div>
+    <div>
+      <address>
+        <li>email: you@gmail.whatever</li>
+        <li>contact: +234 12345678</li>
+      </address>
+    </div>
+  </footer>
+</body>
+</html>
