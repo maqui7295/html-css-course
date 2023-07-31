@@ -1,51 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/testimonial-slider.css">
 </head>
+
 <body>
   <header class="header" id="top">
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="users.html">Users</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="register.html">Register</a></li>
-        <li><a href="profile.html">Profile</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Our Website</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="users.html">Users</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
     </nav>
-    <section>
-      ABOUT US
+    <!--  -->
+    <section class="jumbotron">
+      <div class="content text-center py-5">
+        <h1>ABOUT US</h1>
+        <p class="lead">View info about us</p>
+      </div>
     </section>
   </header>
   <main>
-    <section>
-      <div class="image">
-        <img src="Screenshot (77).png" alt="About us">
+    <section class="aboutus" style="background-color: #eee;">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img src="images/bg.jpg" alt="Medium image" class="img-fluid">
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="title mb-3" style="text-align: left;">
+              <h2>About Us</h2>
+            </div>
+            <p class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas animi
+              corrupti officia hic ut reprehenderit, suscipit molestiae tempora ipsum eum blanditiis praesentium amet
+              repudiandae? Possimus odit a dolorem quos ab!</p>
+
+            <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas animi
+              corrupti officia hic ut reprehenderit, suscipit molestiae tempora ipsum eum blanditiis praesentium amet
+              repudiandae? Possimus odit a dolorem quos ab!</p>
+
+            <a href="about.html" class="btn btn-primary w-50">Learn more</a>
+          </div>
+        </div>
       </div>
-      <div class="content">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem voluptate et ut consectetur in obcaecati animi dignissimos provident eveniet, nostrum nam, doloremque sed quis pariatur. Tempore quos aliquid repellendus eligendi.
+    </section>
+    <section class="testimonial">
+      <div class="testimonial-slider">
+        <div id="carouselExampleControls" class="carousel carousel-dark" data-bs-ride="false">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="testimonial-title">
+                  <i class="bi bi-quote display-1"></i>
+                  <h2 class="fw-bold display-6">What our customers say</h2>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="col-md-8">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="card">
+                      <div class="img-wrapper"><img
+                          src="https://codingyaar.com/wp-content/uploads/headshot-1-scaled.jpg" class="d-block w-100"
+                          alt="..."> </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title 1</h5>
+                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                        <p class="card-text">Some quick example text to build on the card title and make up
+                          the bulk of the
+                          card's content.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card">
+                      <div class="img-wrapper"><img
+                          src="https://codingyaar.com/wp-content/uploads/headshot-2-scaled.jpg" class="d-block w-100"
+                          alt="..."> </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up
+                          the bulk of the
+                          card's content.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card">
+                      <div class="img-wrapper"><img
+                          src="https://codingyaar.com/wp-content/uploads/headshot-3-scaled.jpg" class="d-block w-100"
+                          alt="..."> </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up
+                          the bulk of the
+                          card's content.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card">
+                      <div class="img-wrapper"><img
+                          src="https://codingyaar.com/wp-content/uploads/headshot-4-scaled.jpg" class="d-block w-100"
+                          alt="..."> </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title 4</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up
+                          the bulk of the
+                          card's content.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card">
+                      <div class="img-wrapper"><img
+                          src="https://codingyaar.com/wp-content/uploads/headshot-5-scaled.jpg" class="d-block w-100"
+                          alt="..."> </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title 5</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up
+                          the bulk of the
+                          card's content.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card">
+                      <div class="img-wrapper"><img
+                          src="https://codingyaar.com/wp-content/uploads/headshot-6-scaled.jpg" class="d-block w-100"
+                          alt="..."> </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title 6</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up
+                          the bulk of the
+                          card's content.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
-  <footer>
-    <div>
-      <h3>About us</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo totam animi delectus, officia quaerat repellat, corrupti deleniti, fugit saepe doloribus porro optio voluptates. Ullam amet veritatis repellat aut enim.</p>
-    </div>
-    <div>
-      <address>
-        <li>email: you@gmail.whatever</li>
-        <li>contact: +234 12345678</li>
-      </address>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h2 class="mb-3">About us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo totam animi delectus, officia
+            quaerat repellat, corrupti deleniti, fugit saepe doloribus porro optio voluptates. Ullam amet veritatis
+            repellat
+            aut enim.</p>
+        </div>
+        <div class="col-12 col-md-3">
+          <h2 class="mb-3">Quick links</h2>
+          <ul class="quick-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-3">
+          <h2 class="mb-3">Contact Us</h2>
+          <address>
+            <ul style="list-style: none;">
+              <li style="padding: 8px;">email: you@gmail.whatever</li>
+              <li style="padding: 8px;">contact: +234 12345678</li>
+            </ul>
+          </address>
+        </div>
+      </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+    <script src="js/testimonial-slider.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>

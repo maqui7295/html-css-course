@@ -10,3 +10,20 @@ https://github.com/maqui7295/html-css-course
 
 Tutorial
 https://www.youtube.com/watch?v=RGOj5yH7evk
+
+
+Image placeholders
+https://placehold.co/
+
+
+Testimonial Carousel
+https://codepen.io/codingyaar/pen/bGjLrjX
+
+Animation
+https://animate.style/
+
+
+Jobs
+https://remote.co/
+https://weworkremotely.com/
+https://linkedin.com

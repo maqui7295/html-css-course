@@ -5,164 +5,159 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project page</title>
+  <title>Users page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/testimonial-slider.css">
 </head>
 
 <body>
   <header class="header" id="top">
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="users.html">Users</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="register.html">Register</a></li>
-        <li><a href="profile.html">Profile</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Our Website</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="users.html">Users</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
     </nav>
-    <section class="">
-      OUR Users
-
+    <section class="jumbotron">
+      <div class="content text-center py-5">
+        <h1>Users</h1>
+        <p class="lead">View info about us</p>
+      </div>
     </section>
   </header>
-  <main class="content">
-    <section>
-      <h1>Our Current Users</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Occupation</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>John Doe</td>
-            <td>98</td>
-            <td>Programmer</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Mary Doe</td>
-            <td>98</td>
-            <td>Doctor</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Sam Doe</td>
-            <td>98</td>
-            <td>Scientist</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Peter Doe</td>
-            <td>98</td>
-            <td>Scientist</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Lois Doe</td>
-            <td>98</td>
-            <td>Scientist</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <section>
-      <h2>Our old users</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>NAME</th>
-            <th>AGE</th>
-            <th>Occupation</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>11</td>
-            <td>Emeka</td>
-            <td>25</td>
-            <td>Trainer</td>
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>Chioma</td>
-            <td>28</td>
-            <td>Athlete</td>
-          </tr>
-           <tr>
-            <td>13</td>
-            <td>Fred</td>
-            <td>26</td>
-            <td>Blogger</td>
-          </tr>
-        </tbody>
-      </table>
-
-    </section>
-    <section> 
-      <h2>Our Users at the moment</h2>
-      <caption>3 users at the moment</caption>
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>NAME</th>
-            <th>AGE</th>
-            <th>Occupation</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>21</td>
-            <td>Alfred</td>
-            <td>36</td>
-            <td>Economist</td>
-          </tr>
-          <tr>
-            <td>22</td>
-            <td>Water</td>
-            <td>37</td>
-            <td>Chemist</td>
-          </tr>
-          <tr>
-            <td>23</td>
-            <td>Nath</td>
-            <td>37</td>
-            <td>Boxer</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <th></th>
-            <th></th>
-            <th>110</th>
-            <th></th>
-        </tfoot>
-      </table>
-    </section>
+  <main>
+    <div class="container mt-5 py-5">
+      <div class="title">
+        <h2>Our Current Users</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+          <section class="table-responsive">
+            <table class="table table-striped">
+              <thead class="table-light">
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Occupation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>John Doe</td>
+                  <td>98</td>
+                  <td>Programmer</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Mary Doe</td>
+                  <td>98</td>
+                  <td>Doctor</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Sam Doe</td>
+                  <td>98</td>
+                  <td>Scientist</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Peter Doe</td>
+                  <td>98</td>
+                  <td>Scientist</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Lois Doe</td>
+                  <td>98</td>
+                  <td>Scientist</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="footer">
-    <div>
-      <h3>About us</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo totam animi delectus, officia
-        quaerat repellat, corrupti deleniti, fugit saepe doloribus porro optio voluptates. Ullam amet veritatis repellat
-        aut enim.</p>
-    </div>
-    <div>
-      <address>
-        <li>email: you@gmail.whatever</li>
-        <li>contact: +234 12345678</li>
-      </address>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h2 class="mb-3">About us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo totam animi delectus, officia
+            quaerat repellat, corrupti deleniti, fugit saepe doloribus porro optio voluptates. Ullam amet veritatis
+            repellat
+            aut enim.</p>
+        </div>
+        <div class="col-12 col-md-3">
+          <h2 class="mb-3">Quick links</h2>
+          <ul class="quick-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-3">
+          <h2 class="mb-3">Contact Us</h2>
+          <address>
+            <ul style="list-style: none;">
+              <li style="padding: 8px;">email: you@gmail.whatever</li>
+              <li style="padding: 8px;">contact: +234 12345678</li>
+            </ul>
+          </address>
+        </div>
+      </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

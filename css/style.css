@@ -1,62 +1,22 @@
 /* ====================== GENERAL STYLES */
 
-* {
-  padding: 0;
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
-  padding: 0;
   height: 100%;
   font-size: 14px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  line-height: 2;
   color: #333;
 }
 
-.container {
-  width: 80%;
-  margin: auto;
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 20px;
 }
 
-.row {
-  display: flex;
-}
-
-/* ========================= NAVIGATION SECTION =================== */
-.navbar ul {
-  display: flex;
-  background-color: #229;
-  padding: 16px 8px;
-  margin-top: 0;
-  margin-bottom: 0;
-  list-style: none;
-  justify-content: end;
-  align-items: center;
-}
-
-.navbar ul li {
-  padding: 8px;
-}
-
-.navbar ul li:last-child {
-  margin-right: 8px;
-}
-
-.navbar ul li a {
-  color: white;
+a {
   text-decoration: none;
-  transition: 500ms;
-}
-
-.navbar ul li a:hover {
-  color: #ddd;
-  border-bottom: 1px solid red;
+  color: #222;
 }
 
 /* ====================== HERO SECTION ==================== */
@@ -87,45 +47,62 @@ body {
   font-size: 20px;
 }
 
+
+.navbar .nav-link:hover {
+  border-bottom: 2px solid red;
+}
+
+/* COMPLETE THE JUMBOTRON CLASS */
+
+.jumbotron {
+  background-color: #229;
+  color: #ffffff;
+  height: 200px;
+}
+
 /* ====================== HERO END ==================== */
 
 
 /* ==================== SERVICES START ================== */
 
-.services, .cta, .aboutus, .testimonial, .footer {
-  padding: 100px;
+.services, .cta, .aboutus {
+  padding: 100px 10px;
 }
 
 .services {
   background: #efefef;
 }
 
-.services .service {
-  background-color: #fff;
-  margin-right: 10px;
-  padding: 10px;
-  
-  /* https://getcssscan.com/css-box-shadow-examples */
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: 1s;
-  text-align:center;
-}
-
-.services .service h2, .services .service .icon {
-  margin-bottom: 1em;
-}
-
 .services .service .icon {
   color: rgba(34, 34, 153);
 }
 
-.services .service:hover {
-  border: 1px solid grey;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
+/* ========================= START FOOTER ========================== */
+
+.footer {
+  background-color: #efefef;
+  padding: 70px 10px;
 }
 
 
-/* ==================== SERVICES END ================== */
+.quick-links {
+  list-style: none;
+  transition: 500ms;
+}
+
+.quick-links li {
+  padding: 8px;
+}
+
+.quick-links li a:hover {
+  border-bottom: 1px solid red;
+}
+
+/* =================== END FOOTER ======================= */
+
+
+
+
 
 /* Tab */
 @media screen and (max-width:764px) {
@@ -133,9 +110,9 @@ body {
     height: 300px;
     background-image: url(../images/bg_medium.jpg);
   }
-
-
 }
+
+
 
 /* Mobile */
 @media screen and (max-width:560px) {
@@ -148,15 +125,6 @@ body {
     font-size: 16px;
   }
 
-  .container {
-    width: 100%;
-  }
-  
-  .row {
-    display: flex;
-    flex-direction: column;
-  }
-
   .hero .content h1 {
     font-size: 25px;
   }
@@ -164,7 +132,5 @@ body {
   .hero .content p {
     font-size: 16px;
   }
-
-
 
 }

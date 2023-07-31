@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+
+    <style>
+
+        /* absolute, fixed, relative */
+
+        .container {
+            position: relative;
+        }
+
+        .first, .second, .third {
+            color: white;
+            height: 200px;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .second, .third {
+            width: 50%;
+            margin: auto;
+            position: relative;
+            z-index: 1000;
+            top: -30px;
+        }
+
+        .first {
+            background-color: blue;
+        }
+
+        .second {
+            background-color: green;
+        }
+
+        .third {
+            background-color: red;
+            top: -60px;
+            width: 40%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda pariatur modi, beatae porro fugit officia dolores aut voluptate nihil magni fugiat quidem facilis rerum, eaque nostrum? Id, laboriosam ipsum.</p>
+        </div>
+        <div class="second">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda pariatur modi, beatae porro fugit officia dolores aut voluptate nihil magni fugiat quidem facilis rerum, eaque nostrum? Id, laboriosam ipsum.</p>
+        </div>
+        <div class="third">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda pariatur modi, beatae porro fugit officia dolores aut voluptate nihil magni fugiat quidem facilis rerum, eaque nostrum? Id, laboriosam ipsum.</p>
+        </div>
+    </div>
+</body>
+</html>
