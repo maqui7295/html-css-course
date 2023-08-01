@@ -1,54 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body>
-  <header>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="users.html">Users</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="register.html">Register</a></li>
-        <li><a href="profile.html">Profile</a></li>
-      </ul>
-    </nav>
-    <section>
-      Login
-    </section>
-    
+<body class="bg-light">
   <main>
-    <form action="#" method="post" class="login">
-      
-      <label for="email">email*</label><br>
-      <input type="email" name="email" id="email" required><br>
-
-      <label for="password">Password*</label><br>
-      <input type="password" name="password" id="password" required><br>
-
-      <button type="submit">Login</button>
-
-    </form>
+    <section class="py-5 mt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8">
+            <h5><a href="index.html">Home page</a></h5>
+            <div class="card card-body shadow">
+              <form action="#" method="post" class="login">
+                <div class="mb-3">
+                  <label class="form-label" for="email">Email*</label><br>
+                  <input placeholder="Enter your email address" class="form-control" type="email" name="email" id="email" required><br>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="password">Password*</label><br>
+                  <input placeholder="Enter your password" class="form-control" type="password" name="password" id="password" required><br>
+                </div>
+                <button class="btn btn-success w-50" type="submit">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer>
-    <div>
-      <h3>About us</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo totam animi delectus, officia quaerat repellat, corrupti deleniti, fugit saepe doloribus porro optio voluptates. Ullam amet veritatis repellat aut enim.</p>
-    </div>
-    <div>
-      <address>
-        <li>email: you@gmail.whatever</li>
-        <li>contact: +234 12345678</li>
-      </address>
-    </div>
-  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
