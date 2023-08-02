@@ -10,6 +10,7 @@ https://github.com/maqui7295/html-css-course
 
 Tutorial
 https://www.youtube.com/watch?v=RGOj5yH7evk
+https://devdocs.io/
 
 
 Image placeholders
