@@ -839,8 +839,6 @@ function printAgeAndName(person) {
 // printAgeAndName2(person);
 printAgeAndName(person);
 
-
-
 // Task
 // create an array with five items
 // pop the last item
