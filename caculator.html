@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial</title>
+
+    <style>
+        .main {
+            background-color: #eee;
+            width: 60%;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .main input {
+            /* width: 50%; */
+            margin: auto;
+            height: 30px;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .right {
+            display: flex;
+            flex-direction: column;
+        }
+
+        button {
+            padding: 5px;
+            width: 40px;
+            height: 40px;
+            /* background-color: skyblue;
+            color: white;
+            border: 0; */
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="main">
+        <input type="text" id="result" placeholder="0">
+        <div class="container">
+            <div class="left">
+                <div class="row">
+                    <button class="btn isNumber" data-value="1">1</button>
+                    <button class="btn isNumber" data-value="2">2</button>
+                    <button class="btn isNumber" data-value="3">3</button>
+                </div>
+                <div class="row">
+                    <button class="btn isNumber" data-value="4">4</button>
+                    <button class="btn isNumber" data-value="5">5</button>
+                    <button class="btn isNumber" data-value="6">6</button>
+                </div>
+                <div class="row">
+                    <button class="btn isNumber" data-value="7">7</button>
+                    <button class="btn isNumber" data-value="8">8</button>
+                    <button class="btn isNumber" data-value="9">9</button>
+                </div>
+                <div class="row">
+                    <button class="btn" data-value="0">0</button>
+                    <button class="btn" data-value="C">C</button>
+                    <button class="btn" data-value="=">=</button>
+                </div>
+            </div>
+            <div class="right">
+                <button class="btn" data-value="+">+</button>
+                <button class="btn" data-value="-">-</button>
+                <button class="btn" data-value="*">*</button>
+                <button class="btn" data-value="/">/</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const buttons = document.querySelectorAll('.btn');
+        const input = document.querySelector('input');
+
+        buttons.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                const value = btn.getAttribute('data-value');
+                if (value === 'C') {
+                    input.value = "0";
+                } else if (value === "=" && input.value.trim() !== "") {
+                    input.value = eval(input.value.trim());
+                } else {
+                    // let space = '';
+                    // if (btn.classList.contains('isNumber')) {
+                    //     space = ''
+                    // }
+                    input.value = input.value + space + value;
+                    input.value = input.value.trim();
+                }
+            });
+        })
+
+
+    </script>
+
+    <!-- <script src="js/tutorial.js"></script> -->
+</body>
+
+</html>

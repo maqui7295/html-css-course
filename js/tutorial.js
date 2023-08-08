@@ -206,11 +206,11 @@ This is line n
 // let temperature = 50;
 
 // function printTemp() {
-//     // a local environment / scope
-//     // local temperature
-//     // let temperature = 20;
+//     a local environment / scope
+//     local temperature
+//     let temperature = 20;
 
-//     // global temperature
+//     global temperature
 //     temperature = 100;
 
 //     console.log(temperature);
@@ -332,6 +332,14 @@ const log = console.log;
 // log((7 / 4) === 1.75)
 // // log((10 / 3) === 3.333333)
 // log(2**2) two raised to power two
+
+// +=, -=, *=, /= %=
+// let a = 2;
+
+// a = a + 1;
+// a += 1
+
+// a *= 5;
 
 // // BODMAS
 // log(2 + 4 * 3)
@@ -605,7 +613,7 @@ const log = console.log;
 
 // // modify array
 // food[0] = "Swallow";
-// log(food);
+// console.log(food);
 
 // // adding / modifying areas using concat
 // const newArr = food.concat(numbers);
@@ -750,132 +758,486 @@ const log = console.log;
 
 // Objects
 
-const person = {
-    name: 'John Doe',
-    age: 34,
-    height: 1.7,
-    occupation: 'Programmer',
-    walk() {
-        log("I am walking")
-    },
-    properties: ["book", 'pen', 'artworks', 'others']
-}
-
-log(typeof person);
-log(person);
-
-
-// access
-log(person.name);
-log(person.age);
-log(person.walk)
-log(person.walk())
-log(person.properties);
-
-log(person['name']);
-log(person['age']);
-
-const item = 'height';
-log(person[item]);
-log(person['height']);
-
-log(person.item) // undefined
-
-// modification
-person.talk = function () {
-    log("I am talking");
-}
-
-person.showSize = 45;
-person['isMarried'] = false;
-
-person.talk();
-log(person.showSize);
-log(person.isMarried);
-
-delete person.properties;
-
-log(person);
-
-// Methods
-log(Object.keys(person));
-log(Object.values(person));
-log(Object.entries(person));
-
-const obj = Object.fromEntries([['isStupid', false], ['IsTall', true]]);
-log(obj);
-
-// Prevent modification or delete
-log('before freezing');
-Object.freeze(person);
-
-log('after freezing');
-
-person.smiling = false;
-delete person.age;
-
-log(person);
-log(Object.isFrozen(person));
-
-// Object Destructuring
-const { name, age, occupation } = person;
-
-log(name);
-log(age)
-log(occupation);
-
-
-function printAgeAndName(person) {
-    log('printing name and age')
-    log(person.name);
-    log(person.age);
-}
-
-// function printAgeAndName2({ name, age }) {
-//     log('printing name and age')
-//     log(name);
-//     log(age);
+// const person = {
+//     name: 'John Doe',
+//     age: 34,
+//     height: 1.7,
+//     occupation: 'Programmer',
+//     walk() {
+//         log("I am walking")
+//     },
+//     properties: ["book", 'pen', 'artworks', 'others']
 // }
-// printAgeAndName2(person);
-printAgeAndName(person);
 
-// Task
-// create an array with five items
-// pop the last item
-// push an item into the array
-// check the length of the array
-// filter the array
-// map
-
-// object
-// using the bracket syntax add property education to 'Masters'
-// using the dot notation, set hobby to 'playing football'
-// log all the person object keys, and values
-// delete showSize property
-// Set a height variable using destructuring
+// log(typeof person);
+// log(person);
 
 
+// // access
+// log(person.name);
+// log(person.age);
+// log(person.walk)
+// log(person.walk())
+// log(person.properties);
+
+// log(person['name']);
+// log(person['age']);
+
+// const item = 'height';
+// log(person[item]);
+// log(person['height']);
+
+// log(person.item) // undefined
+
+// // modification
+// person.talk = function () {
+//     log("I am talking");
+// }
+
+// person.shoeSize = 45;
+
+// person['isMarried'] = false;
+
+// person.talk();
+// log(person.shoeSize);
+// log(person.isMarried);
+
+// delete person.properties;
+
+// log(person);
+
+// // Methods
+// log(Object.keys(person));
+// log(Object.values(person));
+// log(Object.entries(person));
+
+// const obj = Object.fromEntries([['isStupid', false], ['IsTall', true]]);
+// log(obj);
+
+// // Prevent modification or delete
+// log('before freezing');
+// Object.freeze(person);
+
+// log('after freezing');
+
+// person.smiling = false;
+// delete person.age;
+
+// log(person);
+// log(Object.isFrozen(person));
+
+// // Object Destructuring
+// const { name, age, occupation } = person;
+
+// log(name);
+// log(age)
+// log(occupation);
+
+
+// function printAgeAndName(person) {
+//     log('printing name and age')
+//     log(person.name);
+//     log(person.age);
+// }
+
+// // function printAgeAndName2({ name, age }) {
+// //     log('printing name and age')
+// //     log(name);
+// //     log(age);
+// // }
+// // printAgeAndName2(person);
+// printAgeAndName(person);
 
 
 
+// // Task
+// // create an array with five items
+
+// const roomItems = ["chair", "table", "fan", "glass", "door"]
+// console.log(roomItems)
+
+// // pop the last item
+
+// const lastitem = roomItems.pop();
+// console.log(lastitem);
+
+// console.log(roomItems)
+
+// // push an item into the array
+
+// roomItems.push("bed");
+// console.log(roomItems)
+
+// // check the length of the array
+
+// log(roomItems.length)
+
+// // filter the array
+
+// let result = roomItems.filter(function(item){
+//     return item.includes("a")
+// })
+// console.log(result);
+
+
+// // map
+
+// result = roomItems.map(function(item){
+//     return item.length;
+// })
+// console.log(result);
+
+// // object
+// // using the bracket syntax add property education to 'Masters'
+// const person2 = {...person}; // copy
+
+// person2["education"] = "Masters"
+
+// console.log(person2);
+
+// // using the dot notation, set hobby to 'playing football'
+
+// person2.hobby = "playing football"
+// log(person2)
+
+// // log all the person object keys, and values
+
+// log(Object.keys(person2))
+
+// log(Object.values(person2))
+
+// log(Object.entries(person2))
+
+// // delete shoeSize property
+
+// delete person2.shoeSize;
+
+// console.log(person2);
+
+
+// // Set a height variable using destructuring
+// const { height } = person2;
+// console.log(height);
+
+
+// // Referencing
+// const person3 = person2;
+
+// log('This is person 3')
+// log(person3);
+
+// person3.education = "Ph.D";
+
+// log('This is person 2 now')
+// log(person2)
+
+
+// const arr1 = ['dog']
+// const arr2 = arr1; // referencing
+// const arr3 = [...arr1]; // copying
+
+// arr1.push('goat')
+
+// log(arr2);
+// log(arr1);
+
+// log(arr3)
+
+
+// // CONTROL FLOW
+// // if statements, switch statements, for loops, while leaps
+// // Truthy statements: 1, [], {}, true
+// // falsy values: 0, "", undefined, null, NaN
+
+// const age1 = 30;
+// const age2 = 45;
+
+// // if statement
+// if(age1 > 30){
+//    log('I am older than 30 years')
+// }
+
+// // if else
+// if(age1 > 30){
+//    log('I am older than 30 years')
+// } else {
+//     log('I am either 30 years old or below')
+// }
+
+// // if elseif else
+// if(age1 > 30){
+//    log('I am older than 30 years')
+// } else if(age2 >= 45) {
+//    log('I am either 45 years old or older')
+// } else {
+//     log('I am either 30 years old or below')
+// }
+
+
+// // for very many conditions, consider using a switch statement
+
+// // if() {
+
+//     // } else if() {
+
+//         // } else if() {
+
+//             // } else if() {
+
+//                 // } else if() {
+
+//                     // } else {
+
+//                         // }
+
+// const letter = 'd';
+
+// switch (letter) {
+//     case 'a':
+//         log('The letter is a')
+//         break;
+//     case 'b':
+//         log('The letter is b')
+//         break;
+//     case 'c':
+//         log('The letter is c')
+//         break;
+//     case 'd':
+//         log('The letter is d')
+//         break;
+//     case 'e':
+//         log('The letter is e')
+//         break;
+//     default:
+//         log('I dont\'t understand you')
+//         break;
+// }
+
+
+// // for loops and while loops
+// const letters = 'a b c d e f g'.split(' ');
+// log(letters)
+
+// // for(set index; condition; increment){
+
+// // }
+
+// for (let index = 0; index < letters.length; index++) {
+//     log(letters[index]);
+// }
+
+// // log('Index jumps out with var', index);
+
+// log('')
+
+// // for-of loop for arrays/strings
+// for (const lt of letters) {
+//     log(lt);
+// }
+
+// // for-in for objects
+// for (const key in person) {
+//     if (person.hasOwnProperty(key)) {
+//         log(key, ':', person[key])
+//     }
+// }
+
+// log('')
+
+// Object.keys(person).forEach(function(key) {
+//     log(key, ':', person[key]);
+// });
+
+// log('');
+
+// // break and continue
+// for (let index = 0; index < letters.length; index++) {
+//     let letter = letters[index];
+//     log(letter);
+//     if(letter === 'd') break; // stop loop
+// }
+
+// log('');
+
+// // break and continue
+// for (let index = 0; index < letters.length; index++) {
+//     let letter = letters[index];
+//     if(letter === 'd' || letter === 'e') continue; // skip step
+//     log(letter);
+// }
+
+
+// let counter = 0;
+
+// while(counter !== 10) {
+//     log(counter);
+//     counter += 1;
+// }
+
+// log('Counter is now', counter);
+
+// counter = 0;
+
+// log('');
+
+// // skip all odd numbers
+// // break when counter is 14
+// while(counter !== 20) {
+//     if(counter % 2 === 0) {
+//         log(counter);
+//     } else {
+//         counter += 1;
+//         continue;
+//     }
+//     if(counter === 14) break;
+//     counter += 1;
+// }
 
 
 
+// Functions
+
+let arr = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let arr3 = [7, 8, 9];
 
 
+// function square(number) {
+//     const result = number * number;
+//     return result;
+// }
+
+// store a define a variable that is a function
+let square = function (number) {
+    const result = number * number;
+    return result;
+}
+
+log(square(40));
+// log(square.name);
+
+arr = arr.map(square)
+
+log(arr)
+
+arr2 = arr2.map(square)
+
+log(arr2)
+
+arr3 = arr3.map(square)
+
+log(arr3)
+
+// anonymous functions
+
+log('anonymous function', arr3.map(function (n) {
+    return n * n;
+}));
+
+// array functions
+
+let arrowFunction = (n) => {
+    return n * n;
+}
+
+arrowFunction = n => n * n;
+
+log(arr.map(arrowFunction));
 
 
+// you can shorten simple arrow functions
+arr3.map(n => n * n);
 
 
+// Function parameters
+function sum(num1, num2) {
+    return num1 + num2;
+}
+
+log(sum(10, 4));
+
+log(sum(10));
+
+function sum2(num1=5, num2=10) {
+    return num1 + num2;
+}
+
+log(sum2(34, 6));
+log(sum2(34));
+log(sum2())
+
+function printMe() {
+    log('Me')
+}
+
+printMe();
+
+function sumOfFirstN(n = 100) {
+    if (n <= 0) {
+        alert('Your value shouldn"t be zero or less')
+        return 0;
+    }
+    
+    let total = 0;
+    while(n !== 0) {
+        total += n; // total = total + n
+        n -= 1; // n = n - 1
+    }
+    return total;
+}
+
+function sumOfFirstNShort(n = 100) {
+    if (n <= 0) {
+        alert('Your value shouldn"t be zero or less')
+        return 0;
+    }
+    const total = (n * (n + 1)) / 2;
+    return total;
+}
+
+log(sumOfFirstN());
+log(sumOfFirstNShort());
+
+// console.log(sumOfFirstN(0));
+
+log(sumOfFirstNShort(48));
 
 
+function trueSum(...numbers) {
+    log(numbers);
+    let total = 0;
+
+    numbers.forEach(n => {
+        if (typeof n === 'number') {
+            // total += n;
+            total = total + n;
+        } else if(typeof n === 'string') {
+            n = Number.parseInt(n);
+            if (! Number.isNaN(n)) {
+                total += n;
+            }
+        }
+        log('total is now', total);
+    })
+    
+    return total;
+}
+
+log(trueSum(6, 6, 7, 7, 8, 9, 9, 7, 9, 2))
+
+log(trueSum(5, 5, "were", "you", '1', '2', 10, 2));
 
 
+console.time()
+log(sumOfFirstN(1_000_000_000))
+console.timeEnd()
+
+console.time()
+log(sumOfFirstNShort(1_000_000_000))
+console.timeEnd()
 
 
-
-
-
+// DOM MANIPULATION WITH JS
 
 
 
